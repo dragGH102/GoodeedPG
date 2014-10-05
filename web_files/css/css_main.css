@@ -1,0 +1,376 @@
+/* override Bootstrap's css: http://stackoverflow.com/questions/19576175/how-do-you-decrease-navbar-height-in-bootstrap-3 */
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:10px !important; margin-bottom:0px;}
+
+html,body{
+	height:100%;
+	width:100%;	
+}
+
+body{
+	margin:0;
+	padding: 13.8% 0 0 0;
+}
+
+#whole-page{
+	height:100%;
+	width:100%;
+}
+
+
+#main{
+	position:fixed;
+	height:91.5%;
+	width:100%;
+	overflow-y:auto; /* make "main" scrollable vertically */
+	overflow-x:hidden;
+}
+
+#menu-container{
+	position:fixed;
+	margin-left:30%;
+	height:0%;
+	width:0%;
+	background-color:#F0F0F0;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+
+#header{
+	height:9%;
+}
+
+.header-container{
+	height:100%;
+}
+
+.header-row{
+	background-color: #ff4647;
+	height:100%;
+}
+
+#header-label{
+	font-size:2.1em;
+	line-height: 1.7em;
+	color:#ffffff;
+}
+
+#footer{
+	width:100%;
+	background-color: #707070;
+}
+
+.c-icon{ /* !!# px */
+	position:relative;
+	display:block;
+	width: 32px; 
+	height: 32px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin:40% 0 40% 0; 
+	background-image:url('../icons/bullets.png');
+}
+
+.c-icon-bullets{
+	background-image:url('../icons/bullets.png');
+}
+
+.c-icon-starred{
+	background-image:url('../icons/starred.png');
+}
+
+.c-icon-starred-chosen{
+	background-image:url('../icons/starred_chosen.png');
+}
+
+.c-icon-donor{
+	background-image:url('../icons/donor.png');
+}
+
+.c-icon-association{
+	background-image:url('../icons/association.png');		
+}
+
+.c-icon-settings{
+	background-image:url('../icons/settings.png');		
+}
+
+.c-icon-donations{
+	background-image:url('../icons/mydonations.png');		
+}
+
+.c-icon-projects{
+	background-image:url('../icons/projects.png');		
+}
+
+.c-icon-checked{
+	background-image:url('../icons/checked.svg');
+}
+
+.c-icon-pencil{
+	background-size:100% 100%;
+	background-image:url('../icons/pencil.png');
+	height:100%;
+	width:20%;
+	margin-left:15px;
+}  
+
+.c-icon-bell{
+	background-image:url('../icons/bell.png');
+}
+
+.c-icon-book{
+	background-image:url('../icons/book.png');
+	background-size:100% 100%;
+	height:100%;
+	width:20%; 
+	margin-left:15px;
+}
+
+.c-icon-chart{
+	background-image:url('../icons/chart.png');
+	background-size:100% 100%;
+	height:100%;
+	width:20%;
+	background-position: 0 -10px;
+}
+
+.c-icon-menu{
+	background-position: center top;
+}
+
+
+
+#choice-association{
+	margin-top:40%;
+	width:100%;
+	height:30%;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	background-image:url('../icons/association.png')
+}
+
+#choice-donor{
+	margin-top:23%;
+	width:100%;
+	height:30%; 
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center; 
+	background-image:url('../icons/donor.png')
+}
+
+
+.project-image-association, .project-image-donor{
+	width:100%;
+	height:33.3%; /*300px;*/
+	background-repeat:no-repeat;
+	background-size: 100%; /* % is relative to PARENT (body - page), NOT to the original image size! */
+	padding-top:33.5%;
+}
+
+.project-description{
+	opacity:0.8;
+	background-color:#707070;
+	font-weight:bold;
+}
+
+.project-description-headline{
+	font-size: 1.3em;
+	color:#ffffff;
+	text-transform:uppercase;
+}
+
+.project-description-sub{
+	font-size: 1.1em;
+	color:#ffffff;
+}
+
+.project-image-description{
+	opacity:0.4;
+	
+}
+
+.project-action{
+	width:100%;
+	height:33.3%; /*300px;*/
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+
+#project-text-description-container{
+	margin:5%;
+	width:90%;
+	height:85%;
+	border: 1px #000000 solid;
+}
+
+#project-text-description-title{
+	margin:5%;
+	width:92%;
+	height:5%;
+	font-size: 13px;
+	border: none;
+	line-height:175%;
+	font-weight:bold;
+}
+
+#project-text-description{
+	margin:15px;
+	width:92%;
+	height:80%;
+	background-image: url("../images/line.png");
+	background-repeat: repeat;
+	font-size: 18px;
+	border: none;
+	line-height:175%;
+}
+
+#picture-container{
+	display:block;
+	height:100%;
+	width:100%;
+	opacity:0.5;
+}
+
+#video-container{
+	display:block;
+	height:100%;
+	width:100%;
+}
+
+#video-contained{
+	display:block;
+	height:100%;
+	width:100%;	
+}
+
+#project-preview{
+	width:95%;
+	margin: 3%;
+	height:30%;
+	background-repeat:no-repeat;
+	background-size:100%;	
+}
+
+#project-info-container{
+	margin: 3%;   
+    width: 95%;   
+    height: 65%;  
+	border: 1px #000000 solid;
+}
+
+#project-info-title{
+	margin-left:4.5%;
+	width:92%;
+	height:5%;
+	font-size: 1.4em;
+	border: none;
+	line-height:175%;
+	font-weight:bold;
+}
+
+#project-info-description{
+	margin:5%;
+	width:92%;
+	height:35%;
+	background-image: url("../images/line.png");
+	background-repeat: repeat;
+	font-size: 1.2em;
+	border: none;
+	line-height:175%;
+	overflow-x:hidden;
+	overflow-y:auto; 
+}
+
+#project-map{
+	width: 100%;
+	height: 100%;
+	display:block;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#project-feed{
+	max-height:50%;
+	margin: 3%;   
+    width: 95%;   
+	overflow-x:hidden;
+	overflow-y:auto; /* scrollbar if over 100% of 2nd page */
+}
+
+.project-content{ /* contenuto caricato nel progetto (e.g. video,testo,..) */
+	height:70%;
+	border:#000000 1px solid;
+	width:100%;
+	margin-top:3%;
+	overflow-x:hidden;
+}
+
+.project-content-image{
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+.project-content-audio{
+	background-image:url('../icons/recording.svg');
+	background-repeat: no-repeat;
+	background-size:40%;
+	background-position: center 5%;
+}
+
+
+.project-content-text-title{
+	margin-left:3%;
+	width:92%;
+	height:10%;
+	font-size: 1.2em;
+	border: none;
+	line-height:175%;
+	font-weight:bold;
+}
+
+.project-content-text-body{
+	margin:3%;
+	background-image: url("../images/line.png");
+	background-repeat: repeat;
+	font-size: 1.3em;
+	line-height:175%;
+	border: none;
+	overflow-x:hidden;
+	overflow-y:auto; 
+}
+
+#audio-start-recording, #audio-stop-recording{
+	margin-top:20%;
+	margin-left:30%;
+	width:50%;
+	height:50%;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+#audio-start-recording{
+	background-image:url('../icons/not_recording.svg');
+}
+
+#audio-stop-recording{
+	background-image:url('../icons/recording.svg');
+}
+
+#ask-link-video{
+	position:fixed;
+	margin-top:45%;
+	margin-left:10%;
+	width:80%;
+	height:20%;
+}
+
+.menu-label{
+	font-size:1.8em;
+	line-height:2em;
+}
